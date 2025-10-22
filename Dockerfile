@@ -8,7 +8,5 @@ WORKDIR /app
 COPY . /app
 
 # Компилируем код
-RUN javac src/Main.java
-
-# Команда, которая будет выполняться при запуске контейнера
-CMD ["java", "src/Main"]
+RUN javac src/main.java
+CMD ["java", "src/main"]
